@@ -1,0 +1,253 @@
+html {
+  background: url(https://img.besthqwallpapers.com/Uploads/15-4-2019/87588/program-code-black-backgrounds-programming-background-with-program-code-code.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*general styles*/
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size:1.25rem;
+  margin: 0;
+  color: #fff;
+}
+
+
+/*navbar styles*/
+#navbar {
+  position:fixed;
+}
+
+.active{
+	background-color:#61977e;
+	color:white;
+}
+
+.topnavbar{
+	background-color:#333;
+	box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
+  position: fixed;
+  width: 100%;
+}
+
+.topnavbar ul{
+	padding:0;
+	margin:0;
+	display:flex;
+	list-style-type:none;
+}
+
+.topnavbar a{
+	display:inline-flex;
+	text-decoration:none;
+	color:#F2F2F2;
+	padding:19px 20px;
+}
+
+.nav-items{
+	text-align:center;
+	overflow:hidden;
+	clear:both;
+	transition: 0.3s ease;
+}
+
+.nav-items a:hover{
+	background-color:#ddd;
+	color:black;
+	transition: 0.3s ease;
+}
+
+input#menu-icon-input{
+	display:none;
+}
+
+.topnavbar label{
+	padding:10px 20px;
+	float:right;
+	font-size:2rem;
+	color:#F2F2F2;
+    display:none;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.topnavbar label:hover{
+	background-color:#DDD;
+	color:black;
+	transition: 0.3s ease;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px){
+
+    .topnavbar ul{display:block}
+
+    .topnavbar label{display:inline-flex;}
+
+    .topnavbar a{display:block;}
+
+    .nav-items{max-height:0;}
+
+    input:checked ~ .nav-items{max-height:100%;}
+}
+
+/*style welcome-section*/
+#welcome-section {
+  height:100vh;
+}
+
+.welcome{
+  font-family: 'Hurricane', cursive;
+  color: #fff;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 768px){
+  .welcome {
+    padding-bottom: 200px;
+  }
+}
+
+.profile-pic{
+  width: 25%;
+  float: left;
+  border-radius: 50%;
+  padding-left: 30px;
+}
+/* Media Queries */
+@media screen and (min-width: 800px){
+  .profile-pic{
+    width: 20%;
+    float: left;
+    border-radius: 50%;
+    padding-left: 30px;
+  }
+}
+
+/*styles my-projects section */
+.my-projects .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  flex: 1;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding: 15px 20px;
+}
+
+.link-pic {
+  width: 300px;
+  border-radius:30px;
+
+}
+
+.project-tile {
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: 'Hurricane', cursive;
+  font-size:4rem;
+  font-weight:bold;
+}
+
+@media (max-width: 768px) {
+  .my-projects {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .my-projects .container {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-projects {
+    flex-direction: column;
+    padding-top: 50px 100px 50px 100px;
+    text-align: center;
+  }
+
+  .my-projects .container {
+    display: block;
+    text-align: center;
+    line-height: 2;
+
+  }
+
+  .link-pic {
+    width: 600px;
+  }
+}
+/*contact styles*/
+.contact-me{
+  text-align: center;
+}
+
+.bottom-text {
+  margin-bottom: 40px;
+}
+
+ .btn {
+  background: #7C99AC;
+  background-image: -webkit-linear-gradient(top, #7C99AC, #92A9BD);
+  background-image: -moz-linear-gradient(top, #7C99AC, #92A9BD);
+  background-image: -ms-linear-gradient(top, #7C99AC, #92A9BD);
+  background-image: -o-linear-gradient(top, #7C99AC, #92A9BD);
+  background-image: linear-gradient(to bottom, #7C99AC, #92A9BD);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #D3DEDC;
+  background-image: -webkit-linear-gradient(top, #92A9BD, #D3DEDC);
+  background-image: -moz-linear-gradient(top, #92A9BD, #D3DEDC);
+  background-image: -ms-linear-gradient(top, #92A9BD, #D3DEDC);
+  background-image: -o-linear-gradient(top, #92A9BD, #D3DEDC);
+  background-image: linear-gradient(to bottom, #92A9BD, #D3DEDC);
+  text-decoration: none;
+}
+
+/*Footer styles*/
+.footer {
+  background-color: #333;
+  margin-top: 50px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+  .fa-github {
+    background: #2c4762;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
